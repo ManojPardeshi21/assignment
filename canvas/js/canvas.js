@@ -1,6 +1,6 @@
 
   window.onload = function(){
-    console.log('window loaded...');
+    
     this.renderCanvas();
   }
   function renderCanvas(){
@@ -8,7 +8,7 @@
     var canvas2 = document.getElementById("canvas2");
     var context1 = canvas1.getContext('2d');
     var context2 = canvas2.getContext('2d')
-    console.log("document laoded.." + context1 + context2);
+   
 
       context1.beginPath();
       context1.rect(150, 10, 150, 80);
@@ -19,8 +19,9 @@
       context1.stroke();
 
     context1.beginPath();
-    context1.arc(75, 75, 50, 0, Math.PI * 2, true);
-    context1.moveTo(100, 10);
+    context1.arc(500, 60, 50, 0, 2 * Math.PI);
+    context1.stroke();
+
 
 
   }
